@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function checkPassword() {
+        var passwordGrab = document.getElementById("passwordInput");
+        var password = passwordGrab.value;
+        var usGrab = document.getElementById("usernameInput");
+        var username = usGrab.value;
+        if (username == "adarsh" && password == "adarsh123") {
+          return true;
+        }
+        alert("INCORRECT PASSWORD! ACCESS DENIED!");
+        return false;
+      }
+    </script>
+    <style>
+      p {
+        text-align: center;
+        font-size: 40px;
+      }
+      a {
+        font-size: 35px;
+      }
+      button {
+        position: absolute;
+        top: 60%;
+        left: 47%;
+        height: 70px;
+        width: 110px;
+        background-color: cyan;
+        font-size: 30px;
+        font-family: cursive;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body bgcolor="red">
+    <p style="font-size: 80px"><u> za music</u></p>
+    <p>
+      Username:
+      <input id="usernameInput" type="text" placeholder="Username" />
+    </p>
+    <p>
+      password:
+      <input id="passwordInput" type="password" placeholder="password" />
+    </p>
+
+    <a href="main.html" onclick="return checkPassword()"
+      ><button style="margin: auto">Login</button></a
+    >
+  </body>
+</html>
